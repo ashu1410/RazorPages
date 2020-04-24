@@ -1,0 +1,46 @@
+﻿@page
+@model RazorPagesInz.Pages.CRUD.AddModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<form method="post" class="mt-3">
+
+    <div class="form-group row">
+        <label asp-for="newRes.Title" class="col-sm-2 col-form-label">
+        </label>
+        <div class="col-sm-10">
+            <input asp-for="newRes.Title" class="form-control" placeholder="Tytuł">
+            <span asp-validation-for="newRes.Title" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="newRes.Link" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="newRes.Link" class="form-control" placeholder="Link do materiału">
+            <span asp-validation-for="newRes.Link" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="newRes.resCat" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="newRes.resCat" class="custom-select mr-sm-2"
+                    asp-items="Html.GetEnumSelectList<ResCategory>()">
+                <option value="">Wybierz</option>
+            </select>
+            <span asp-validation-for="newRes.resCat" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Stwórz</button>
+            <a asp-page="/Index" class="btn btn-primary">Anuluj</a>
+        </div>
+    </div>
+
+
+    @section Scripts{ 
+    <partial name="_ValidationScriptsPartial" />
+    }
+</form>

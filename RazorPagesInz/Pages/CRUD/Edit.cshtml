@@ -1,0 +1,47 @@
+﻿@page "{id:min(1)}"
+@model RazorPagesInz.Pages.CRUD.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+    <form method="post" class="mt-3">
+
+        <input hidden asp-for="resPage.ID_res" />
+
+        <div class="form-group row">
+            <label asp-for="resPage.Title" class="col-sm-2 col-form-label">
+            </label>
+            <div class="col-sm-10">
+                <input asp-for="resPage.Title" class="form-control" placeholder="Tytuł">
+                <span asp-validation-for="resPage.Title" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="resPage.Link" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="resPage.Link" class="form-control" placeholder="Link do materiału">
+                <span asp-validation-for="resPage.Link" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="resPage.resCat" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <select asp-for="resPage.resCat" class="custom-select mr-sm-2"
+                        asp-items="Html.GetEnumSelectList<ResCategory>()">
+                    <option value="">Wybierz</option>
+                </select>
+                <span asp-validation-for="resPage.resCat" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Zapisz</button>
+                <a asp-page="/AdminPage" class="btn btn-primary">Anuluj</a>
+            </div>
+        </div>
+
+        @section Scripts{
+            <partial name="_ValidationScriptsPartial" />
+        }
+    </form>

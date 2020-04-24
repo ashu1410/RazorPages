@@ -1,0 +1,12 @@
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\bin\Debug\netstandard2.0\Razor.Services.deps.json
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\bin\Debug\netstandard2.0\Razor.Services.dll
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\bin\Debug\netstandard2.0\Razor.Services.pdb
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\bin\Debug\netstandard2.0\Razor.Models.dll
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\bin\Debug\netstandard2.0\Razor.Models.pdb
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.csprojAssemblyReference.cache
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.csproj.CoreCompileInputs.cache
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.AssemblyInfoInputs.cache
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.AssemblyInfo.cs
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.csproj.CopyComplete
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.dll
+C:\Users\Ashu\source\repos\RazorPagesInz\Razor.Services\obj\Debug\netstandard2.0\Razor.Services.pdb

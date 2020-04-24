@@ -1,0 +1,14 @@
+﻿@page "{id}"
+@model RazorPagesInz.Pages.CRUD.DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="alert alert-danger">
+    <h4>Chcesz na pewno chcesz usunąć materiał? </h4>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Tak, usuwam</button>
+        <a asp-page="/AdminPage" class="btn btn-primary">Nie</a>
+    </form>
+</div>
+

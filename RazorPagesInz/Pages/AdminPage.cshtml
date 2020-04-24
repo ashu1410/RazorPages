@@ -1,0 +1,28 @@
+﻿@page
+@model RazorPagesInz.Pages.AdminPageModel
+
+@{
+    ViewData["Title"] = "AdminPage";
+}
+
+@if (User.Identity.Name == "ashajro@gmail.com")
+{
+    <div class="card-deck">
+        @foreach (var res in Model.resPages)
+        {
+            <div class="card m-3" style="min-width:18rem; max-width:30.5%;">
+                <img src="@res.Img_path" class="card-img-top-thumb" asp-append-version="true">
+                <div class="card-body">
+                    <h5 class="card-title text-center">@res.Title</h5>
+                    <a asp-page="/CRUD/Edit" class="btn btn-primary m-1 text-center" asp-route-ID="@res.ID_res">Edytuj</a>
+                    <a asp-page="/CRUD/Delete" class="btn btn-primary m-1 text-center" asp-route-ID="@res.ID_res">Usuń</a>
+                    <a href="@res.Link" class="btn btn-primary m-1 text-center">Zobacz materiał</a>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <a class="btn-primary" asp-page="/Index">Nie masz uprawnień administratora. Wróć na stronę główną</a>
+}

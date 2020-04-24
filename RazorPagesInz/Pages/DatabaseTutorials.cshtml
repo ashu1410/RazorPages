@@ -1,0 +1,21 @@
+﻿@page
+@model RazorPagesInz.Pages.DatabaseTutorialsModel
+@{
+    ViewData["Title"] = "DatabaseTutorials";
+}
+
+<h1>DatabaseTutorials</h1>
+
+<div class="card-deck">
+    @foreach (var res in Model.resPages.Where(n=> n.resCat==Razor.Models.ResCategory.Database))
+    {
+     var imgpath =  res.Img_path;
+    <div class="card m-3" style="min-width:18rem; max-width:30.5%;">
+        <img src="@imgpath" class="card-img-top-thumb" asp-append-version="true">
+        <div class="card-body">
+            <h5 class="card-title">@res.Title</h5>
+            <a href="@res.Link" class="btn btn-primary m1 text-center">Przejdz do materiału</a>
+        </div>
+    </div>
+    }
+</div>

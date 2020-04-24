@@ -1,0 +1,42 @@
+﻿@page
+@model RazorPagesInz.Pages.CategoriesModel
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="card-deck">
+    <div class="card m-2" style="min-width: 18rem; max-width: 45%;">
+        <img src="~/resources/web.jpg" class="card-img-top" asp-append-version="true">
+        <div class="card-body">
+            <h5 class="card-title">Technologie webowe</h5>
+            <p class="card-text">Stacki technologiczne niezbędne do tworzenia stron internetowych, szczególnie Front-endu.</p>
+            <a asp-page="/WebTutorials" class="btn btn-primary m1 text-center">Zobacz materiały</a>
+        </div>
+    </div>
+    <div class="card m-2" style="min-width: 18rem; max-width: 45%;">
+        <img src="~/resources/db.png" class="card-img-top" asp-append-version="true">
+        <div class="card-body">
+            <h5 class="card-title">Bazy danych</h5>
+            <p class="card-text">Języki, systemy zarządzania relacyjny i nierelacyjnymi bazami danych</p>
+            <a asp-page="/DatabaseTutorials" class="btn btn-primary m1 text-center">Zobacz materiały</a>
+        </div>
+    </div>
+</div>
+<div class="card-deck">
+    <div class="card m-2" style="min-width: 18rem; max-width: 45%;">
+        <img src="~/resources/os1.jpg" class="card-img-top" asp-append-version="true">
+        <div class="card-body">
+            <h5 class="card-title">Administracja</h5>
+            <p class="card-text">Administracja i zarządzanie systemami operacyjnymi</p>
+            <a asp-page="/AdministrationTutorials" class="btn btn-primary m1 text-center">Zobacz materiały</a>
+        </div>
+    </div>
+    <div class="card m-2" style="min-width: 18rem; max-width: 45%;">
+        <img src="~/resources/desktop.jpg" class="card-img-top" asp-append-version="true">
+        <div class="card-body">
+            <h5 class="card-title">Języki programowania</h5>
+            <p class="card-text">Najpopularniejsze i najszybciej rozwijajace się języki programowania</p>
+            <a asp-page="/LangTutorials" class="btn btn-primary m1 text-center">Zobacz materiały</a>
+        </div>
+    </div>
+</div>
